@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    animation: fadeIn 2s;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+  
+  .tabla {
+      width: 50%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    animation: bounceIn 2.5s;
+  }

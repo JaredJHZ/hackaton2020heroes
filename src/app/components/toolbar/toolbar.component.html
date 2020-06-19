@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="tool">
+    <div class="text">
+        <span>{{text}}</span>
+    </div>
+    <div class="hamburger-container">
+        <button
+         [ngClass]=" open ? 'is-active' : '' " 
+         class="hamburger hamburger--collapse"
+         type="button"
+         (click)="_menuService.toggleSidenav()">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+</mat-toolbar>

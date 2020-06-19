@@ -1,0 +1,12 @@
+<div style="margin-top: 10px;" class="row row-cols-1 row-cols-md-4 animate">
+    <div class="col mb-4" *ngFor="let heroe of heroes" style="display: flex; justify-content: center; align-items: center; align-content: center;">
+        <div class="card bg-light mb-4" style="max-width: 18rem;">
+            <div class="card-header"><img [src]="heroe['image_url']" class="card-img" alt="..."></div>
+            <div class="card-body">
+              <h5 class="card-title">{{heroe['name']}}</h5>
+              <p class="card-text">{{heroe['resume'] | slice:0:140 }} ...</p>
+              <button mat-raised-button (click)="desc(heroe['name'])">Learn more</button>
+            </div>
+          </div>
+    </div>
+</div>

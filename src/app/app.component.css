@@ -1,0 +1,46 @@
+.nav {
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav a {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.nav a:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.nav li {
+    margin-top: 10%;
+}
+
+.menu {
+    width: 10%;
+}
+
+.logo {
+    width: 60%;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-device-width : 812px)
+{ 
+  .menu {
+    width: 20%;
+  }
+}

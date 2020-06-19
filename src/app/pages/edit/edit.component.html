@@ -1,0 +1,37 @@
+<div class="content" animateOnScroll animationName="animated fadeIn">
+    <div class="tabla">
+  
+      <mat-form-field>
+            <mat-label>Filter</mat-label>
+            <input matInput (keyup)="applyFilter($event.target.value)" id="filtro" type="text" class="validate">
+      </mat-form-field>
+      <div class="mat-elevation-z4" class="table">
+        <table *ngIf="!loading" mat-table [dataSource]="dataSource">
+      
+          <!-- Position Column -->
+          <ng-container matColumnDef="superheroe">
+            <th style="text-align: center; padding: 15px;" mat-header-cell *matHeaderCellDef> Superheroe </th>
+            <td style="text-align: center;padding: 15px;" mat-cell *matCellDef="let superheroe" class="center"> {{superheroe.name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="release">
+            <th style="text-align: center;padding: 15px;" mat-header-cell *matHeaderCellDef> Release </th>
+            <td style="text-align: center;padding: 15px;" mat-cell *matCellDef="let superheroe" class="center"> {{superheroe.first_appereance}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="actions">
+            <th style="text-align: center;padding: 15px;" mat-header-cell *matHeaderCellDef> Actions </th>
+            <td style="text-align: center;padding: 15px;" mat-cell *matCellDef="let superheroe" class="center">
+               <button (click)="delete(superheroe.name)" mat-raised-button color="danger">Eliminar</button>
+            </td>
+          </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+  
+      <div *ngIf="loading" class="loading">
+        <app-loading ></app-loading>
+      </div>
+  </div>

@@ -1,0 +1,25 @@
+.divider {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 90vh;
+  animation: fadeIn 2s;
+}
+
+.custom {
+  width: 60%;
+}
+
+.buttons a{
+  margin: 5px;
+}
+
+.class {
+  animation: fadeIn 2s;
+}

@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column;
+    align-items: center;
+    min-height: 93vh;
+    animation: fadeIn 1s;
+}
+
+.c1 {
+  animation: bounceIn 1s;
+}
+
+.form {
+    margin-top: 2%;
+    width: 60%;
+}
+
+.addPower{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-device-width : 812px)
+{ 
+  .form {
+    width: 100%;
+  }
+
+  
+}

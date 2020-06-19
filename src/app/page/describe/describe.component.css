@@ -1,0 +1,14 @@
+.content {
+    width: 100%;
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 3s;
+    margin-bottom: 10px;
+}
+
+.img {
+    width: 80%;
+    margin: auto;
+    animation: bounceInLeft 1s;
+}
