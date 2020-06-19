@@ -4,13 +4,13 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - npm install -g @angular
+      - npm install -g @angular/cli
   build:
     commands:
       - ng build --prod
   post_build:
     commands:
-      - aws s3 sync dist/ s3://$BUCKET_NAME --delete
+      - echo "did it"
 artifacts:
     type: zip
     base-directory: dist
