@@ -16,7 +16,7 @@ export class AuthenticatorService {
     }
   }
 
-  logIn(username, password) {
+  logIn(username: string, password: string) {
     Auth.signIn(username, password).then(
       (response) => {
         localStorage.setItem('session', response['Session'] );

@@ -12,6 +12,7 @@ import { MenuService } from 'src/app/services/menu.service';
 export class LoginComponent implements OnInit {
 
   loginForm : FormGroup;
+  loading: boolean = false;
 
   constructor(public _authService: AuthenticatorService, public router: Router, public _menuService: MenuService) { 
     this.loginForm = new FormGroup({
@@ -34,6 +35,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    this.loading = true;
     this._authService.logIn(this.loginForm.controls['email'].value, this.loginForm.controls['password'].value);
   }
 

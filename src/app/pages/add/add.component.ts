@@ -53,12 +53,12 @@ export class AddComponent implements OnInit {
     this._heroesService.saveHeroe(superheroe)
         .subscribe(
           (value) => {
-            console.log(value);
             this.loading = false;
             this.heroeForm.reset();
           },
           (error) => {
             console.log(error);
+            this.loading = false;
           }
         )
 
