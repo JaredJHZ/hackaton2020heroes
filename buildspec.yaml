@@ -13,7 +13,7 @@ phases:
     commands:
       - echo "did it"
 artifacts:
+  type: zip
+  base-directory: dist/superheroes-hackaton
   files:
-      - "**/*"
-    discard-paths: no
-    base-directory: dist/your-app-name
+    - '**/*'
