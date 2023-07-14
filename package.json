@@ -24,7 +24,7 @@
     "@angular/router": "~9.1.0",
     "@aws-amplify/ui-angular": "^0.2.8",
     "@ng-bootstrap/ng-bootstrap": "^6.1.0",
-    "aws-amplify": "^3.0.17",
+    "aws-amplify": "^5.3.4",
     "aws-sdk": "^2.699.0",
     "bootstrap": "^4.4.0",
     "ng2-animate-on-scroll": "^2.0.0",
